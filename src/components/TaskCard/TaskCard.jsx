@@ -1,7 +1,10 @@
 //import './TaskCard.css'
+<<<<<<< HEAD
 import { useContext } from "react";
 import { Link } from  "react-router-dom"
 import TaskContext from "../../context/TaskContext";
+=======
+>>>>>>> e5a0a3cf36571a8f915d534151936da4c00ef20b
 
 // function TaskCard(props) {
 //     return (<div>
@@ -16,6 +19,7 @@ import TaskContext from "../../context/TaskContext";
 
 //Alternative syntax to read props:
 
+<<<<<<< HEAD
 function TaskCard({ id, title, dueDate, priority }) {
   const { onDeleteTask } = useContext(TaskContext);
 
@@ -34,4 +38,19 @@ function TaskCard({ id, title, dueDate, priority }) {
   );
 }
 
+=======
+function TaskCard({title, dueDate, priority, onDeleteTask}) {
+    return (<div className="task-item">
+        <h3>{title}</h3>
+        <span className={`task-priority ${priority.toLowerCase()}`}>{priority}</span>
+        {dueDate && <p>Due Date: {dueDate}</p>}
+        <p></p>
+        <button onClick={onDeleteTask}>Delete</button>
+    </div>);
+}
+
+
+
+
+>>>>>>> e5a0a3cf36571a8f915d534151936da4c00ef20b
 export default TaskCard;

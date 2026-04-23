@@ -229,5 +229,39 @@ form button:active {
     --border-color: #4a5568;
   }
 }
+<<<<<<< HEAD
 
+=======
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.app-container.light {
+  background-color: #f4f4f4;
+  color: #1f2937;
+}
+.app-container.dark {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+.app-container.dark form,
+.app-container.dark .task-item {
+  background-color: #374151;
+  color: #f9fafb;
+  border-color: #6b7280;
+}
+.app-container.dark input,
+.app-container.dark select,
+.app-container.dark button {
+  background-color: #111827;
+  color: #f9fafb;
+  border: 1px solid #6b7280;
+}
+.app-container.light input,
+.app-container.light select {
+  background-color: white;
+  color: black;
+}
+>>>>>>> e5a0a3cf36571a8f915d534151936da4c00ef20b
 
